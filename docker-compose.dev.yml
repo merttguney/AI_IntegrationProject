@@ -1,0 +1,59 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: unless-stopped
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: password
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+  redis:
+    image: redis:6-alpine
+    container_name: event-queue-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-password}
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-password}", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  consumer:
+    build:
+      context: .
+      dockerfile: ./src/consumer/Dockerfile
+    restart: always
+    container_name: rabbitmq-consumer
+    networks:
+      - app-network
+    environment:
+      RABBITMQ_URL: amqp://admin:password@rabbitmq:5672
+      REDIS_HOST: rabbitmq
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-password}
+    command: npx ts-node src/consumer/consumer.ts
+    depends_on:
+      - rabbitmq
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  rabbitmq_data:
+  redis_data:

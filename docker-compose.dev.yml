@@ -12,7 +12,7 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
     networks:
-      - app-network
+      - ecom-network
     healthcheck:
       test: ["CMD", "rabbitmqctl", "status"]
       interval: 30s
@@ -29,7 +29,7 @@ services:
       - redis_data:/data
     restart: unless-stopped
     networks:
-      - app-network
+      - ecom-network
     healthcheck:
       test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-password}", "ping"]
       interval: 30s
@@ -42,18 +42,19 @@ services:
     restart: always
     container_name: rabbitmq-consumer
     networks:
-      - app-network
+      - ecom-network
     environment:
       RABBITMQ_URL: amqp://admin:password@rabbitmq:5672
-      REDIS_HOST: rabbitmq
+      REDIS_HOST: redis
       REDIS_PORT: 6379
       REDIS_PASSWORD: ${REDIS_PASSWORD:-password}
     command: npx ts-node src/consumer/consumer.ts
     depends_on:
       - rabbitmq
 networks:
-  app-network:
-    driver: bridge
+  ecom-network:
+    external: true
+    name: ecom-network-${ENVIRONMENT}
 volumes:
   rabbitmq_data:
   redis_data:

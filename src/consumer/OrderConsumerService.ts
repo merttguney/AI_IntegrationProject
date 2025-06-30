@@ -4,6 +4,7 @@ import { startConsumer } from "./startConsumer";
 const process = async (queueItem: QueueModel) => {
   if (queueItem.operationType === "create") {
     console.log("Creating order:", queueItem.data);
+    // email
   } else if (queueItem.operationType === "update") {
     console.log("Updating order:", queueItem.data);
   } else if (queueItem.operationType === "delete") {

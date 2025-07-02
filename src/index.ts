@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import aiRouter from "./api/ai";
+import authRouter from "./api/auth";
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/api/ai", aiRouter);
+app.use("/api/auth", authRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

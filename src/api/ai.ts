@@ -1,11 +1,12 @@
 import { Router } from "express";
 import { generateAICompletion } from "../services/aiProvider";
+import { authenticateJWT } from "../middleware/auth";
 
 const router = Router();
 
 // POST /api/ai/translate-and-seo
 // Body: { baseFields: { name, description }, targetLanguages: ["en", "fr", "tr"], provider: "openai" | "gemini" }
-router.post("/translate-and-seo", async (req: any, res: any) => {
+router.post("/translate-and-seo", authenticateJWT, async (req: any, res: any) => {
   const { baseFields, targetLanguages, provider } = req.body || {};
   if (
     !baseFields ||
@@ -16,7 +17,10 @@ router.post("/translate-and-seo", async (req: any, res: any) => {
     return res.status(400).json({ error: "baseFields ve targetLanguages zorunludur" });
   }
 
-  const aiProvider = provider || "openai";
+  // JWT'den provider ve language al (isteğe bağlı override)
+  const jwtUser = req.user || {};
+  const aiProvider = provider || jwtUser.provider || "openai";
+  const language = jwtUser.language;
   const results: Record<string, { title: string; description: string; keywords: string[] }> = {};
 
   for (const lang of targetLanguages) {

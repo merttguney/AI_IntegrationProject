@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import { User } from "../models/user";
 import { registerToGemini, registerToOpenAI } from "../services/aiProvider";
+import { config } from "../config/config";
 
 const router = Router();
 const users: User[] = [];
@@ -36,7 +37,7 @@ router.post("/login", async (req: Request, res: Response): Promise<void> => {
     res.status(401).json({ error: "Şifre yanlış" });
     return;
   }
-  const token = jwt.sign({ id: user.id, username: user.username, provider, language }, process.env.JWT_SECRET || "secret", { expiresIn: "1h" });
+  const token = jwt.sign({ id: user.id, username: user.username, provider, language }, config.jwtSecret, { expiresIn: "1h" });
   res.json({ token });
 });
 

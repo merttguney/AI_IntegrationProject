@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Box, Container, Typography, Paper, Select, MenuItem, TextField, Button, InputLabel, FormControl, Grid, CircularProgress, Snackbar, Alert } from "@mui/material";
 import ChatIcon from "@mui/icons-material/Chat";
-import axios from "axios";
+import { postToBackend } from "../utils/api";
 
 const PROVIDERS = [
   { value: "openai", label: "OpenAI" },
@@ -14,7 +14,6 @@ export default function Home() {
   const [credential, setCredential] = useState("");
   const [language, setLanguage] = useState("en");
   const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
   const [result, setResult] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -26,21 +25,13 @@ export default function Home() {
     setError("");
     setResult(null);
     try {
-      // Burada gerçek login/register işlemi yapılabilir, şimdilik credential'ı header olarak gönderiyoruz
-      const res = await axios.post(
-        "http://localhost:3000/api/ai/translate-and-seo",
-        {
-          baseFields: { name, description },
-          targetLanguages: [language],
-          provider,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${credential}`,
-          },
-        }
-      );
-      setResult(res.data.results?.[language]);
+      const data = {
+        baseFields: { name },
+        targetLanguages: [language],
+        provider,
+      };
+      const res = await postToBackend<{ results: any }>("/api/ai/translate-and-seo", data, credential);
+      setResult(res.results?.[language]);
       setOpen(true);
     } catch (err: any) {
       setError(err?.response?.data?.error || "Bir hata oluştu");
@@ -61,7 +52,7 @@ export default function Home() {
         </Box>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
-            <Grid item xs={12}>
+            <div>
               <FormControl fullWidth>
                 <InputLabel>Provider</InputLabel>
                 <Select
@@ -74,18 +65,17 @@ export default function Home() {
                   ))}
                 </Select>
               </FormControl>
-            </Grid>
-            <Grid item xs={12}>
+            </div>
+            <div>
               <TextField
                 label="Credential (JWT veya API Key)"
                 value={credential}
                 onChange={e => setCredential(e.target.value)}
                 fullWidth
-                required
                 type="password"
               />
-            </Grid>
-            <Grid item xs={12} sm={6}>
+            </div>
+            <div>
               <TextField
                 label="Dil (en, tr, fr)"
                 value={language}
@@ -93,8 +83,8 @@ export default function Home() {
                 fullWidth
                 required
               />
-            </Grid>
-            <Grid item xs={12} sm={6}>
+            </div>
+            <div>
               <TextField
                 label="Kategori/Ürün Adı"
                 value={name}
@@ -102,19 +92,8 @@ export default function Home() {
                 fullWidth
                 required
               />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                label="Açıklama"
-                value={description}
-                onChange={e => setDescription(e.target.value)}
-                fullWidth
-                multiline
-                minRows={2}
-                required
-              />
-            </Grid>
-            <Grid item xs={12}>
+            </div>
+            <div>
               <Button
                 type="submit"
                 variant="contained"
@@ -125,7 +104,7 @@ export default function Home() {
               >
                 {loading ? <CircularProgress size={24} /> : "AI ile Doldur"}
               </Button>
-            </Grid>
+            </div>
           </Grid>
         </form>
         {result && (

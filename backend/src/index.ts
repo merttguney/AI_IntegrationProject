@@ -7,15 +7,23 @@ import authRouter from "./api/auth";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
-// CORS ayarı: Frontend'in adresini buraya yaz
+// CORS ayarı: Daha geniş erişim
 app.use(cors({
-  origin: "http://localhost:3000",
-  credentials: true
+  origin: ["http://localhost:3000", "http://localhost:3001"],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json());
+
+// Request logging middleware
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`, req.body);
+  next();
+});
 
 app.get("/health", (req, res) => {
   res.json({ status: "ok" });

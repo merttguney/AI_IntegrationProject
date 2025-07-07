@@ -27,8 +27,8 @@ router.post("/translate-and-seo", (req, res) => {
 
     for (const lang of targetLanguages) {
       // Promptları generic servis ile oluştur
-      const titlePrompt = categoryAI.buildPrompt(baseFields, "title");
-      const descPrompt = categoryAI.buildPrompt(baseFields, "description");
+      const titlePrompt = categoryAI.buildPrompt(baseFields, "title", lang);
+      const descPrompt = categoryAI.buildPrompt(baseFields, "description", lang);
       const metaTitlePrompt = categoryAI.buildPrompt(baseFields, "metaTitle", lang);
       const metaDescPrompt = categoryAI.buildPrompt(baseFields, "metaDescription", lang);
       const keywordsPrompt = categoryAI.buildPrompt(baseFields, "keywords", lang);

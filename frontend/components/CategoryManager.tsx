@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Grid from '@mui/material/Grid';
 import {
   Box,
   Card,
@@ -6,7 +7,6 @@ import {
   Typography,
   TextField,
   Button,
-  Grid2 as Grid,
   Chip,
   CircularProgress,
   Alert,
@@ -21,6 +21,10 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+  FormLabel,
 } from '@mui/material';
 import {
   Add as AddIcon,
@@ -38,6 +42,7 @@ interface CategoryData {
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
+  title?: string;
 }
 
 interface LanguageData {
@@ -68,6 +73,7 @@ export default function CategoryManager() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [copiedField, setCopiedField] = useState<string | null>(null);
+  const [provider, setProvider] = useState("openai");
 
   const handleBaseDataChange = (field: keyof CategoryData, value: string | string[]) => {
     setBaseData(prev => ({ ...prev, [field]: value }));
@@ -89,12 +95,13 @@ export default function CategoryManager() {
     setSuccess('');
 
     try {
-      const response = await postToBackend('/api/ai/translate-and-seo', {
+      const response = await postToBackend<{ results: LanguageData }>('/api/ai/translate-and-seo', {
         baseFields: {
           name: baseData.name,
           description: baseData.description,
         },
         targetLanguages,
+        provider, // <-- Sağlayıcıyı API'ye gönder
       });
 
       setAiResults(response.results);
@@ -128,6 +135,19 @@ export default function CategoryManager() {
         AI destekli kategori oluşturma ve çoklu dil desteği
       </Typography>
 
+      {/* AI Sağlayıcı Seçimi */}
+      <FormControl component="fieldset" sx={{ mb: 3 }}>
+        <FormLabel component="legend">AI Sağlayıcı</FormLabel>
+        <RadioGroup
+          row
+          value={provider}
+          onChange={e => setProvider(e.target.value)}
+        >
+          <FormControlLabel value="openai" control={<Radio />} label="OpenAI" />
+          <FormControlLabel value="gemini" control={<Radio />} label="Gemini" />
+        </RadioGroup>
+      </FormControl>
+
       {/* Ana Dil Girişi */}
       <Card sx={{ mb: 3 }}>
         <CardContent>
@@ -139,7 +159,7 @@ export default function CategoryManager() {
           </Box>
           
           <Grid container spacing={3}>
-            <Grid xs={12} md={6}>
+            <Grid item xs={12} md={6}>
               <FormControl fullWidth>
                 <InputLabel>Ana Dil</InputLabel>
                 <Select
@@ -155,7 +175,7 @@ export default function CategoryManager() {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid xs={12} md={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 label="Kategori Adı"
@@ -164,7 +184,7 @@ export default function CategoryManager() {
                 placeholder="Örn: Elektronik Ürünler"
               />
             </Grid>
-            <Grid xs={12}>
+            <Grid item xs={12}>
               <TextField
                 fullWidth
                 multiline
@@ -259,7 +279,7 @@ export default function CategoryManager() {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Grid container spacing={3}>
-                    <Grid xs={12} md={6}>
+                    <Grid item xs={12} md={6}>
                       <TextField
                         fullWidth
                         label="Kategori Adı"
@@ -278,7 +298,7 @@ export default function CategoryManager() {
                         }}
                       />
                     </Grid>
-                    <Grid xs={12} md={6}>
+                    <Grid item xs={12} md={6}>
                       <TextField
                         fullWidth
                         label="Meta Başlık"
@@ -297,7 +317,7 @@ export default function CategoryManager() {
                         }}
                       />
                     </Grid>
-                    <Grid xs={12}>
+                    <Grid item xs={12}>
                       <TextField
                         fullWidth
                         label="Açıklama"
@@ -316,7 +336,7 @@ export default function CategoryManager() {
                         }}
                       />
                     </Grid>
-                    <Grid xs={12}>
+                    <Grid item xs={12}>
                       <TextField
                         fullWidth
                         label="Anahtar Kelimeler"

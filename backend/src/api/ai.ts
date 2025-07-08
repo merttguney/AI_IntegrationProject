@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { generateOpenAICompletion } from "../services/openaiService";
+import { generateAICompletion } from "../services/aiProvider";
 import { CategoryAIService } from "../services/categoryAIService";
 
 const router = Router();
@@ -8,10 +8,10 @@ const router = Router();
 const categoryAI = new CategoryAIService();
 
 // POST /api/ai/translate-and-seo
-// Body: { baseFields: { name, description }, targetLanguages: ["en", "fr", "tr"] }
+// Body: { baseFields: { name, description }, targetLanguages: ["en", "fr", "tr"], provider: "openai" | "gemini" }
 router.post("/translate-and-seo", (req, res) => {
   (async () => {
-    const { baseFields, targetLanguages } = req.body || {};
+    const { baseFields, targetLanguages, provider = "openai" } = req.body || {};
     if (!baseFields || !targetLanguages || typeof baseFields !== "object" || !Array.isArray(targetLanguages)) {
       return res.status(400).json({ error: "baseFields ve targetLanguages zorunludur" });
     }
@@ -40,19 +40,19 @@ router.post("/translate-and-seo", (req, res) => {
       let keywords: string[] = ["AI service error"];
 
       try {
-        title = await generateOpenAICompletion(titlePrompt, lang);
+        title = await generateAICompletion(provider, titlePrompt, lang);
       } catch {}
       try {
-        description = await generateOpenAICompletion(descPrompt, lang);
+        description = await generateAICompletion(provider, descPrompt, lang);
       } catch {}
       try {
-        metaTitle = await generateOpenAICompletion(metaTitlePrompt, lang);
+        metaTitle = await generateAICompletion(provider, metaTitlePrompt, lang);
       } catch {}
       try {
-        metaDescription = await generateOpenAICompletion(metaDescPrompt, lang);
+        metaDescription = await generateAICompletion(provider, metaDescPrompt, lang);
       } catch {}
       try {
-        const keywordsRaw = await generateOpenAICompletion(keywordsPrompt, lang);
+        const keywordsRaw = await generateAICompletion(provider, keywordsPrompt, lang);
         keywords = categoryAI.parseAIResponse(keywordsRaw, "keywords") as string[];
       } catch {
         keywords = ["AI service error"];

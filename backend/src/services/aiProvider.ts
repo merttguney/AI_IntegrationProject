@@ -2,6 +2,7 @@ import { generateOpenAICompletion } from "./openaiService";
 import { generateGeminiCompletion } from "./geminiService";
 
 export async function generateAICompletion(provider: string, prompt: string, language: string) {
+  console.log(`[AI] Provider: ${provider}, Language: ${language}`);
   if (provider === "gemini") {
     return generateGeminiCompletion(prompt, language);
   }

@@ -26,7 +26,7 @@ export class CategoryAIService implements IAIContentService<CategoryInput, Categ
         return "";
     }
   }
-
+// Servisin altında olmasın.
   private cleanLabel(text: string): string {
     return text.replace(/^(Meta Title|Meta Description|Title|Description|Açıklama|Başlık)(\s*\(.*?\))?:?\s*/i, '').trim();
   }

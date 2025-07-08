@@ -18,6 +18,10 @@ import {
   InputLabel,
   Select,
   MenuItem,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+  FormLabel,
 } from "@mui/material";
 import {
   SmartToy as AIIcon,
@@ -45,6 +49,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [copiedField, setCopiedField] = useState<string | null>(null);
+  const [provider, setProvider] = useState("openai");
 
   const handleAI = async () => {
     if (!name || !description) {
@@ -56,9 +61,10 @@ export default function Home() {
     setSuccess("");
     setAiResults({});
     try {
-      const response = await postToBackend("/api/ai/translate-and-seo", {
+      const response = await postToBackend<{ results: any }>("/api/ai/translate-and-seo", {
         baseFields: { name, description },
         targetLanguages,
+        provider,
       });
       setAiResults(response.results);
       setSuccess("AI ile içerik başarıyla oluşturuldu!");
@@ -83,6 +89,19 @@ export default function Home() {
       <Typography variant="body1" color="text.secondary" mb={4}>
         Kategori adı ve açıklamasını gir, hedef dilleri seç, AI ile otomatik çeviri ve SEO alanlarını oluştur.
       </Typography>
+
+      {/* AI Sağlayıcı Seçimi */}
+      <FormControl component="fieldset" sx={{ mb: 3 }}>
+        <FormLabel component="legend">AI Sağlayıcı</FormLabel>
+        <RadioGroup
+          row
+          value={provider}
+          onChange={e => setProvider(e.target.value)}
+        >
+          <FormControlLabel value="openai" control={<Radio />} label="OpenAI" />
+          <FormControlLabel value="gemini" control={<Radio />} label="Gemini" />
+        </RadioGroup>
+      </FormControl>
 
       <Card sx={{ mb: 3 }}>
         <CardContent>

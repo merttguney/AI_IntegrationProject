@@ -7,6 +7,7 @@ export async function generateOpenAICompletion(prompt: string, language: string)
     { role: "user", content: prompt }
   ];
 
+  const start = Date.now();
   const response = await axios.post(
     OPENAI_API_URL,
     {
@@ -21,6 +22,8 @@ export async function generateOpenAICompletion(prompt: string, language: string)
       }
     }
   );
+  const durationMs = Date.now() - start;
+  console.log("OpenAI yanıt süresi:", durationMs, "ms");
 
   return response.data.choices[0].message.content;
 } 

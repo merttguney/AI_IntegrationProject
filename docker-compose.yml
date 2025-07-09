@@ -37,6 +37,26 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+  mongodb:
+    image: mongo:7
+    container_name: ecom-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-mongopassword}
+      MONGO_INITDB_DATABASE: ecom_templates
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - ecom-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
   api:
     build: .
     restart: always
@@ -50,8 +70,10 @@ services:
       API_KEY: your-api-key
       API_SECRET: your-api-secret
       SENTRY_DSN: your-sentry-dsn
+      MONGODB_URI: mongodb://admin:${MONGO_PASSWORD:-mongopassword}@mongodb:27017/ecom_templates?authSource=admin
     depends_on:
       - rabbitmq # Ensure RabbitMQ starts first
+      - mongodb
   consumer:
     build: . # Reuse the same Dockerfile
     restart: always
@@ -64,10 +86,12 @@ services:
       REDIS_HOST: redis
       REDIS_PORT: 6379
       REDIS_PASSWORD: ${REDIS_PASSWORD:-redispassword}
+      MONGODB_URI: mongodb://admin:${MONGO_PASSWORD:-mongopassword}@mongodb:27017/ecom_templates?authSource=admin
     command: npx ts-node src/consumer/consumer.ts
     depends_on:
       - rabbitmq
       - api
+      - mongodb
 networks:
   ecom-network:
     external: true
@@ -75,3 +99,4 @@ networks:
 volumes:
   rabbitmq_data:
   redis_data:
+  mongodb_data:

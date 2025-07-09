@@ -7,11 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec ts-node src/server.ts",
     "consume": "ts-node src/consumer/consumer.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "email:demo": "ts-node src/utils/EmailServiceDemo.ts",
+    "email:seed": "ts-node -e \"import('./src/utils/TemplateSeeder').then(m => m.TemplateSeeder.seedSampleTemplates())\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
     "@sentry/node": "^9.6.0",
     "amqplib": "^0.10.5",
     "axios": "^1.8.3",
@@ -19,6 +22,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "handlebars": "^4.7.8",
+    "mongoose": "^8.16.1",
     "nodeenv": "^3.0.75",
     "nodemailer": "^6.10.0",
     "redis": "^4.7.0"

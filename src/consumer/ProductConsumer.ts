@@ -3,6 +3,10 @@ import { startConsumer } from "./startConsumer";
 
 const process = async (queueItem: QueueModel) => {
   if (queueItem.operationType === "create") {
+    // product id datadan al
+    // product servis ile datayı bizim apiden çek
+    // productın kolonlarını işle ve bir json oluştur
+    // elastic search oluşan json ekle
     console.log("Creating product:", queueItem.data);
   } else if (queueItem.operationType === "update") {
     console.log("Updating product:", queueItem.data);

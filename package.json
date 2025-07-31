@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ibrahimbayer/strapi-http-toolkit": "^1.0.0-beta.20",
     "@sendgrid/mail": "^8.1.5",
     "@sentry/node": "^9.6.0",
     "amqplib": "^0.10.5",

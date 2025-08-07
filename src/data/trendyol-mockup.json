@@ -1,0 +1,958 @@
+[
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Altın",
+                "attributeValueId": 2880
+            },
+            {
+                "attributeId": 47,
+                "attributeName": "Renk",
+                "attributeValue": "Pudra"
+            },
+            {
+                "attributeId": 293,
+                "attributeName": "Beden",
+                "attributeValue": "Tek Ebat",
+                "attributeValueId": 4872
+            },
+            {
+                "attributeId": 294,
+                "attributeName": "Yaş Grubu",
+                "attributeValue": "Yetişkin",
+                "attributeValueId": 2879
+            },
+            {
+                "attributeId": 296,
+                "attributeName": "Cinsiyet",
+                "attributeValue": "Kadın",
+                "attributeValueId": 21494
+            }
+        ],
+        "barcode": "8684310633299",
+        "batchRequestId": "c0c7612a-5339-44e4-8919-5bc702fd8e84-1754344452",
+        "brand": "Ted Baker",
+        "brandId": 13485,
+        "categoryName": "Vücut Aksesuarları",
+        "createDateTime": 1754319253027,
+        "description": "Batu1 - TBSS25FCB032_103",
+        "dimensionalWeight": 0,
+        "gender": "Kadın",
+        "hasActiveCampaign": false,
+        "id": "beeda0c58817831ee8c29e0879283004",
+        "images": [
+            {
+                "url": "https://resim.brmagazacilik.com.tr/TedBaker//TBSS25FCB033103/TBSS25FCB033103_1.jpg"
+            },
+            {
+                "url": "https://resim.brmagazacilik.com.tr/TedBaker//TBSS25FCB033103/TBSS25FCB033103_2.jpg"
+            },
+            {
+                "url": "https://resim.brmagazacilik.com.tr/TedBaker//TBSS25FCB033103/TBSS25FCB033103_3.jpg"
+            },
+            {
+                "url": "https://resim.brmagazacilik.com.tr/TedBaker//TBSS25FCB033103/TBSS25FCB033103_4.jpg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-08-04T14:54:13.614+00:00",
+        "lastStockChangeDate": "2025-08-04T14:54:13.614+00:00",
+        "lastUpdateDate": 1754319679547,
+        "listPrice": 3497.5,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 726,
+        "platformListingId": "6799aab45b5c0e1b42141feb57e02f68",
+        "productMainId": "TBSS25FCB006",
+        "quantity": 100,
+        "salePrice": 3497.5,
+        "stockCode": "8683689958408",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "batu5",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Pasif Kategori",
+                "rejectReasonDetail": "Seçilen kategori pasif durumdadır. Lütfen yalnızca aktif ve geçerli kategoriler arasından seçim yapınız."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": true,
+        "archived": false,
+        "attributes": [],
+        "barcode": "HBV000013N1CU",
+        "brand": "Altınmarka",
+        "brandId": 157541,
+        "categoryName": "Çikolata",
+        "createDateTime": 1753984508000,
+        "description": "- Yüksek kaliteli %20 oranında fındık içeriğiyle zenginleştirilmiş, lezzetli bir atıştırmalık deneyimi sunar.; - 10 kilogramlık büyük boyutu sayesinde aileler ve gruplar için idealdir; herkes için bolca fındık pralin tadını çıkarabilirsiniz.; - A.; Marka kalitesini yansıtan bu ürün, taze ve doğal malzemelerle üretilmiştir; güvenle tüketebilirsiniz.; - Kolay taşınabilirliği ile seyahatlerde veya pikniklerde yanınızda taşıyabileceğiniz pratik bir seçenek oluşturur.",
+        "dimensionalWeight": 0,
+        "hasActiveCampaign": false,
+        "id": "1e88bb6089fa141fc80ba18250c01c29",
+        "images": [
+            {
+                "url": "https://cdn.dsmcdn.com/mediacenter-stage6/stage/QC_PREP/20250731/20/cbca4881-3933-367f-8886-b099b0c6605c/1_org_zoom.jpg"
+            }
+        ],
+        "lastUpdateDate": 1754047636000,
+        "listPrice": 50,
+        "lockReason": "CRITICAL_SALE_PRICE_CHANGE",
+        "locked": true,
+        "onSale": false,
+        "pimCategoryId": 1459,
+        "platformListingId": "804c8856f24110637c554b4a999051fa",
+        "productCode": 70089190,
+        "productContentId": 12636537,
+        "productMainId": "HBV000013N1CU",
+        "quantity": 1222,
+        "salePrice": 0,
+        "stockCode": "HBV000013N1CU",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "KOPYA - Damla sakızlı",
+        "vatRate": 10,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "hasHtmlContent": false,
+        "productUrl": "https://stage.trendyol.com/altinmarka/kopya-damla-sakizli-p-12636537?merchantId=2738&filterOverPriceListings=false"
+    },
+    {
+        "approved": true,
+        "archived": false,
+        "attributes": [],
+        "barcode": "HBV0000KSJL98",
+        "brand": "Altınmarka",
+        "brandId": 157541,
+        "categoryName": "Çikolata",
+        "createDateTime": 1753979368000,
+        "description": "- Yüksek kaliteli %20 oranında fındık içeriğiyle zenginleştirilmiş, lezzetli bir atıştırmalık deneyimi sunar.; - 10 kilogramlık büyük boyutu sayesinde aileler ve gruplar için idealdir; herkes için bolca fındık pralin tadını çıkarabilirsiniz.; - A.; Marka kalitesini yansıtan bu ürün, taze ve doğal malzemelerle üretilmiştir; güvenle tüketebilirsiniz.; - Kolay taşınabilirliği ile seyahatlerde veya pikniklerde yanınızda taşıyabileceğiniz pratik bir seçenek oluşturur.",
+        "dimensionalWeight": 0,
+        "hasActiveCampaign": true,
+        "id": "ff1e841719d376ddc1ae3c448450c89f",
+        "images": [
+            {
+                "url": "https://cdn.dsmcdn.com/mediacenter-stage1/stage/QC_PREP/20250731/19/2a1ca351-7b3a-3c94-88e4-0cee278f3b45/1_org_zoom.jpg"
+            }
+        ],
+        "lastUpdateDate": 1753979369000,
+        "listPrice": 1001,
+        "locked": false,
+        "onSale": true,
+        "pimCategoryId": 1459,
+        "platformListingId": "710b57b1928713db341c47b88f87edbf",
+        "productCode": 70089189,
+        "productContentId": 12636536,
+        "productMainId": "HBV0000KSJL98",
+        "quantity": 1001,
+        "salePrice": 1001,
+        "stockCode": "HBV0000KSJL98",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "Damla sakızlı",
+        "vatRate": 20,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "hasHtmlContent": false,
+        "productUrl": "https://stage.trendyol.com/altinmarka/damla-sakizli-p-12636536?merchantId=2738&filterOverPriceListings=false"
+    },
+    {
+        "approved": true,
+        "archived": false,
+        "attributes": [],
+        "barcode": "HBV0000KLK0",
+        "brand": "Altınmarka",
+        "brandId": 157541,
+        "categoryName": "Çikolata",
+        "createDateTime": 1753978198000,
+        "description": "- Yüksek kaliteli %20 oranında fındık içeriğiyle zenginleştirilmiş, lezzetli bir atıştırmalık deneyimi sunar.; - 10 kilogramlık büyük boyutu sayesinde aileler ve gruplar için idealdir; herkes için bolca fındık pralin tadını çıkarabilirsiniz.; - A.; Marka kalitesini yansıtan bu ürün, taze ve doğal malzemelerle üretilmiştir; güvenle tüketebilirsiniz.; - Kolay taşınabilirliği ile seyahatlerde veya pikniklerde yanınızda taşıyabileceğiniz pratik bir seçenek oluşturur.",
+        "dimensionalWeight": 0,
+        "hasActiveCampaign": true,
+        "id": "ab5e6fea920c4f11190b76ebd1349666",
+        "images": [
+            {
+                "url": "https://cdn.dsmcdn.com/mediacenter-stage6/stage/QC/20250731/19/36373f18-e867-3d68-af23-cb7c89efbd84/1_org_zoom.jpg"
+            }
+        ],
+        "lastUpdateDate": 1753978199000,
+        "listPrice": 1000,
+        "locked": false,
+        "onSale": true,
+        "pimCategoryId": 1459,
+        "platformListingId": "90c467d1357953b9532b80305116eb91",
+        "productCode": 70089188,
+        "productContentId": 12636535,
+        "productMainId": "HBV0000KLK0",
+        "quantity": 1000,
+        "salePrice": 1000,
+        "stockCode": "HBV0000KLK0",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "RAMBUAZ KAPLI KRİSPİ RA-MB",
+        "vatRate": 10,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "hasHtmlContent": false,
+        "productUrl": "https://stage.trendyol.com/altinmarka/rambuaz-kapli-kri-spi-ra-mb-p-12636535?merchantId=2738&filterOverPriceListings=false"
+    },
+    {
+        "approved": true,
+        "archived": false,
+        "attributes": [],
+        "barcode": "8697408282347",
+        "brand": "Altınmarka",
+        "brandId": 157541,
+        "categoryName": "Çikolata",
+        "createDateTime": 1753816820000,
+        "description": "- Yüksek kaliteli %20 oranında fındık içeriğiyle zenginleştirilmiş, lezzetli bir atıştırmalık deneyimi sunar.; - 10 kilogramlık büyük boyutu sayesinde aileler ve gruplar için idealdir; herkes için bolca fındık pralin tadını çıkarabilirsiniz.; - A.; Marka kalitesini yansıtan bu ürün, taze ve doğal malzemelerle üretilmiştir; güvenle tüketebilirsiniz.; - Kolay taşınabilirliği ile seyahatlerde veya pikniklerde yanınızda taşıyabileceğiniz pratik bir seçenek oluşturur.",
+        "dimensionalWeight": 0,
+        "hasActiveCampaign": true,
+        "id": "229ac4318dc15e643be087756b4ab8f1",
+        "images": [
+            {
+                "url": "https://cdn.dsmcdn.com/mediacenter-stage1/stage/QC_PREP/20250729/22/ad2677b4-74f3-38c6-b64a-be0285859ebe/1_org_zoom.jpg"
+            }
+        ],
+        "lastUpdateDate": 1753966825000,
+        "listPrice": 170,
+        "locked": false,
+        "onSale": true,
+        "pimCategoryId": 1459,
+        "platformListingId": "83192e5dd3bd51043625a2e39795d0a3",
+        "productCode": 70078877,
+        "productContentId": 12631851,
+        "productMainId": "0055-0000-02",
+        "quantity": 100,
+        "salePrice": 170,
+        "stockCode": "0055-0000-02",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "ALT55 %20FINDIK PRALİN KOVA 10KG A.MARKA",
+        "vatRate": 1,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "hasHtmlContent": false,
+        "productUrl": "https://stage.trendyol.com/altinmarka/alt55-20findik-prali-n-kova-10kg-a-marka-p-12631851?merchantId=2738&filterOverPriceListings=false"
+    },
+    {
+        "approved": true,
+        "archived": false,
+        "attributes": [],
+        "barcode": "8697408283719",
+        "brand": "Altınmarka",
+        "brandId": 157541,
+        "categoryName": "Çikolata",
+        "createDateTime": 1753775610000,
+        "description": "- Modern tasarımıyla dikkat çeken ALT211, evinizin dekorasyonuna şıklık katar.; - Dayanıklı malzemelerden üretilmiş olup uzun ömürlü kullanım sunar.; - Kolay temizlenebilir yüzeyi sayesinde pratik bir kullanım sağlar.; - Farklı renk seçenekleriyle mevcut olan bu ürün, her türlü iç mekan tasarımına uyum sağlar.",
+        "dimensionalWeight": 0,
+        "hasActiveCampaign": true,
+        "id": "2d5b7535c1501083e7082dd314b0d594",
+        "images": [
+            {
+                "url": "https://cdn.dsmcdn.com/mediacenter-stage6/stage/QC_PREP/20250729/10/6d10364a-967a-3b76-8a50-f441e5a1453b/1_org_zoom.jpg"
+            }
+        ],
+        "lastUpdateDate": 1753813950000,
+        "listPrice": 1000,
+        "locked": false,
+        "onSale": true,
+        "pimCategoryId": 1459,
+        "platformListingId": "0f73a8ef8e669180d904da86dfd84600",
+        "productCode": 70074462,
+        "productContentId": 12630216,
+        "productMainId": "1192",
+        "quantity": 1000,
+        "salePrice": 1000,
+        "stockCode": "00KM-D00K-0123",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "ALT211",
+        "vatRate": 0,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "hasHtmlContent": false,
+        "productUrl": "https://stage.trendyol.com/altinmarka/alt211-p-12630216?merchantId=2738&filterOverPriceListings=false"
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [],
+        "barcode": "125081905801",
+        "batchRequestId": "6214e3cf-beaf-49f7-9225-a2181637d2b6-1753560212",
+        "brand": "Abdullah-Test",
+        "brandId": 313635,
+        "categoryName": "berkay test leaf cat",
+        "createDateTime": 1753535012623,
+        "description": "<p>Ornek urun aciklamasi bu ürün kalitelidir.</p>",
+        "dimensionalWeight": 1,
+        "hasActiveCampaign": false,
+        "id": "ba602e18f39c6ab5f0dbe29fe80ae035",
+        "images": [
+            {
+                "url": "http://localhost/bizimtrend/images/product/feature/indir.jpg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-26T13:03:33.285+00:00",
+        "lastStockChangeDate": "2025-07-26T13:03:33.285+00:00",
+        "lastUpdateDate": 1753535667847,
+        "listPrice": 499.99,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 131185,
+        "platformListingId": "f47541ee9243f5f334f20fb8e07cc392",
+        "productMainId": "1568",
+        "quantity": 31,
+        "salePrice": 499.99,
+        "stockCode": "st15125215",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "1.ürün",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Sunucu Bağlantı Hatası",
+                "rejectReasonDetail": "Sunucu bağlantısı sağlanamadı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin. Sorun devam ederse, hizmet sağlayıcınızla veya yazılım entegrasyon firmasıyla iletişime geçiniz."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [],
+        "barcode": "869015700169",
+        "batchRequestId": "6c293f16-0b19-47dd-acb8-0e643301852b-1753560128",
+        "brand": "Abdullah-Test",
+        "brandId": 313635,
+        "categoryName": "berkay test leaf cat",
+        "createDateTime": 1753534928517,
+        "description": "postest2",
+        "dimensionalWeight": 1,
+        "hasActiveCampaign": false,
+        "id": "8ac6e2478df90161d80398c007dd38ec",
+        "images": [
+            {
+                "url": "http://localhost/bizimtrend/images/product/feature/6880aaea9bd29.jpeg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-26T13:02:08.862+00:00",
+        "lastStockChangeDate": "2025-08-03T11:12:25.698+00:00",
+        "lastUpdateDate": 1754219545698,
+        "listPrice": 249,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 131185,
+        "platformListingId": "15408fd763ab64c102c6a4b91dbf7973",
+        "productMainId": "1514",
+        "quantity": 12,
+        "salePrice": 199,
+        "stockCode": "null",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "postest2",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Sunucu Bağlantı Hatası",
+                "rejectReasonDetail": "Sunucu bağlantısı sağlanamadı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin. Sorun devam ederse, hizmet sağlayıcınızla veya yazılım entegrasyon firmasıyla iletişime geçiniz."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [],
+        "barcode": "869015700170",
+        "batchRequestId": "1a071977-3d89-4472-9d13-e510055eba22-1753557222",
+        "brand": "Abdullah-Test",
+        "brandId": 313635,
+        "categoryName": "berkay test leaf cat",
+        "createDateTime": 1753532023233,
+        "description": "test urun silinecek",
+        "dimensionalWeight": 1,
+        "hasActiveCampaign": false,
+        "id": "e451ec7a35daab269182ae4e2d25909c",
+        "images": [
+            {
+                "url": "http://localhost/bizimtrend/images/product/feature/6881f2a1dc214.jpeg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-26T12:13:44.455+00:00",
+        "lastStockChangeDate": "2025-07-26T12:13:44.455+00:00",
+        "lastUpdateDate": 1753532907559,
+        "listPrice": 2000,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 131185,
+        "platformListingId": "6de7fcfb0d66de6eb384e5b153f06079",
+        "productMainId": "1517",
+        "quantity": 8,
+        "salePrice": 2000,
+        "stockCode": "612126611",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "test urun silinecek",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Sunucu Bağlantı Hatası",
+                "rejectReasonDetail": "Sunucu bağlantısı sağlanamadı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin. Sorun devam ederse, hizmet sağlayıcınızla veya yazılım entegrasyon firmasıyla iletişime geçiniz."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 59451,
+                "attributeName": "[A-TDG]_Frekans",
+                "attributeValue": "[A-TDG]_50 Hz / 60 Hz",
+                "attributeValueId": 2175220
+            },
+            {
+                "attributeId": 59361,
+                "attributeName": "[A-TDG]_Garanti Tipi",
+                "attributeValue": "[A-TDG]_Resmi Distribütör Garantili",
+                "attributeValueId": 2175048
+            },
+            {
+                "attributeId": 59448,
+                "attributeName": "[A-TDG]_Voltaj",
+                "attributeValue": "[A-TDG]_220 - 240 V",
+                "attributeValueId": 2175212
+            },
+            {
+                "attributeId": 59351,
+                "attributeName": "[A-TDG]_Garanti Süresi",
+                "attributeValue": "[A-TDG]_2 Yıl",
+                "attributeValueId": 2175017
+            },
+            {
+                "attributeId": 59360,
+                "attributeName": "[A-TDG]_Materyal",
+                "attributeValue": "[A-TDG]_Plastik",
+                "attributeValueId": 2180066
+            },
+            {
+                "attributeId": 59455,
+                "attributeName": "[A-TDG]_Otomatik Kapanma",
+                "attributeValue": "[A-TDG]_Var",
+                "attributeValueId": 2175214
+            },
+            {
+                "attributeId": 59415,
+                "attributeName": "[A-TDG]_Renk",
+                "attributeValue": "Siyah"
+            },
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Siyah",
+                "attributeValueId": 2893
+            }
+        ],
+        "barcode": "ALK-2S383-25002-SIY01",
+        "batchRequestId": "6ff16ef6-7585-46b2-9a0d-94e348526f21-1753465267",
+        "brand": "Sevenlex",
+        "brandId": 317858,
+        "categoryName": "[TDG] Türk Kahvesi Makinesi",
+        "createDateTime": 1753440068350,
+        "description": "- Beyaz renk seçeneğiyle mutfak dekorunuza şıklık katan Sevenlex Kahvecim, modern tasarımıyla dikkat çeker.\n- 50 Hz ile 60 Hz frekans aralığında çalışabilme özelliği sayesinde farklı elektrik sistemlerine uyum sağlar.\n- Resmi distribütör garantisi altında olan bu makine, güvenilir kullanım sunar ve olası teknik sorunlarda destek almanızı kolaylaştırır.\n- 220 - 240 V voltaj aralığındaki evsel elektrik bağlantılarına sahip olup geniş kullanım alanına sahiptir.\n- İki yıl garanti süresi ile uzun vadeli bir kullanım güvencesi sağlar; böylece yatırımınızın karşılığını alabilirsiniz.\n- Dayanıklı plastik materyali sayesinde hafif ve kolay taşınabilirlik sunarken aynı zamanda temizliği pratiktir.\n- Otomatik kapanma fonksiyonu ile enerji tasarrufu yapmanıza yardımcı olurken aşırı ısınmayı önleyerek güvenlik sağlar.",
+        "dimensionalWeight": 2,
+        "hasActiveCampaign": false,
+        "id": "2c865e900a7ec14d740d867c3493b324",
+        "images": [
+            {
+                "url": "https://img.alkapida.com/images/products/b/384/sevenlex-kahvecim-otomatik-turk-kahve-makinesi_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/g/365/sevenlex-kahvecim-kahve-makinesi_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/g/95/schafer-kahvecim-otomatik-turk-kahve-makinesi-02_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/u/978/schafer-kahvecim-otomatik-turk-kahve-makinesi-03_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/w/258/schafer-kahvecim-otomatik-turk-kahve-makinesi-01_zoom.jpg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-25T10:41:09.045+00:00",
+        "lastStockChangeDate": "2025-07-25T10:41:09.045+00:00",
+        "lastUpdateDate": 1753440179634,
+        "listPrice": 5000.99,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 131203,
+        "platformListingId": "a943ef442ef67636ce469777174d2474",
+        "productMainId": "1234BT",
+        "quantity": 10,
+        "salePrice": 5000.99,
+        "stockCode": "ALK-001",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "Sevenlex Kahvecim Otomatik Türk Kahve Makinesi",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 59451,
+                "attributeName": "[A-TDG]_Frekans",
+                "attributeValue": "[A-TDG]_50 Hz / 60 Hz",
+                "attributeValueId": 2175220
+            },
+            {
+                "attributeId": 59361,
+                "attributeName": "[A-TDG]_Garanti Tipi",
+                "attributeValue": "[A-TDG]_Resmi Distribütör Garantili",
+                "attributeValueId": 2175048
+            },
+            {
+                "attributeId": 59448,
+                "attributeName": "[A-TDG]_Voltaj",
+                "attributeValue": "[A-TDG]_220 - 240 V",
+                "attributeValueId": 2175212
+            },
+            {
+                "attributeId": 59351,
+                "attributeName": "[A-TDG]_Garanti Süresi",
+                "attributeValue": "[A-TDG]_2 Yıl",
+                "attributeValueId": 2175017
+            },
+            {
+                "attributeId": 59360,
+                "attributeName": "[A-TDG]_Materyal",
+                "attributeValue": "[A-TDG]_Plastik",
+                "attributeValueId": 2180066
+            },
+            {
+                "attributeId": 59455,
+                "attributeName": "[A-TDG]_Otomatik Kapanma",
+                "attributeValue": "[A-TDG]_Var",
+                "attributeValueId": 2175214
+            },
+            {
+                "attributeId": 59415,
+                "attributeName": "[A-TDG]_Renk",
+                "attributeValue": "Beyaz"
+            },
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Beyaz",
+                "attributeValueId": 2882
+            }
+        ],
+        "barcode": "ALK-2S383-25002-SIY02",
+        "batchRequestId": "6ff16ef6-7585-46b2-9a0d-94e348526f21-1753465267",
+        "brand": "Sevenlex",
+        "brandId": 317858,
+        "categoryName": "[TDG] Türk Kahvesi Makinesi",
+        "createDateTime": 1753440068261,
+        "description": "- Beyaz renk seçeneğiyle mutfak dekorunuza şıklık katan Sevenlex Kahvecim, modern tasarımıyla dikkat çeker.\n- 50 Hz ile 60 Hz frekans aralığında çalışabilme özelliği sayesinde farklı elektrik sistemlerine uyum sağlar.\n- Resmi distribütör garantisi altında olan bu makine, güvenilir kullanım sunar ve olası teknik sorunlarda destek almanızı kolaylaştırır.\n- 220 - 240 V voltaj aralığındaki evsel elektrik bağlantılarına sahip olup geniş kullanım alanına sahiptir.\n- İki yıl garanti süresi ile uzun vadeli bir kullanım güvencesi sağlar; böylece yatırımınızın karşılığını alabilirsiniz.\n- Dayanıklı plastik materyali sayesinde hafif ve kolay taşınabilirlik sunarken aynı zamanda temizliği pratiktir.\n- Otomatik kapanma fonksiyonu ile enerji tasarrufu yapmanıza yardımcı olurken aşırı ısınmayı önleyerek güvenlik sağlar.",
+        "dimensionalWeight": 2,
+        "hasActiveCampaign": false,
+        "id": "3beb39cb3bc519e20942876bfef36742",
+        "images": [
+            {
+                "url": "https://img.alkapida.com/images/products/b/384/sevenlex-kahvecim-otomatik-turk-kahve-makinesi_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/g/365/sevenlex-kahvecim-kahve-makinesi_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/g/95/schafer-kahvecim-otomatik-turk-kahve-makinesi-02_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/u/978/schafer-kahvecim-otomatik-turk-kahve-makinesi-03_zoom.jpg"
+            },
+            {
+                "url": "https://img.alkapida.com/images/products/w/258/schafer-kahvecim-otomatik-turk-kahve-makinesi-01_zoom.jpg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-25T10:41:09.019+00:00",
+        "lastStockChangeDate": "2025-07-25T10:41:09.019+00:00",
+        "lastUpdateDate": 1753440179628,
+        "listPrice": 5000.99,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 131203,
+        "platformListingId": "c6daf5b612d1f4a8bd43a11671f1d1f0",
+        "productMainId": "1234BT",
+        "quantity": 10,
+        "salePrice": 5000.99,
+        "stockCode": "ALK-002",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "Sevenlex Kahvecim Otomatik Türk Kahve Makinesi",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 21932,
+                "attributeName": "P7P2kany",
+                "attributeValue": "9JNtany",
+                "attributeValueId": 233193
+            }
+        ],
+        "barcode": "9999110120015",
+        "batchRequestId": "ac6c4172-d552-4b8e-af67-2d5219426346-1753364777",
+        "brand": "Apple",
+        "brandId": 1617,
+        "categoryName": "35nBmfA",
+        "createDateTime": 1753339577431,
+        "description": "<div><ul>\n\t<li>Test ürünü</li>\n</ul>\n<div>\n\t<br /></div></div>",
+        "dimensionalWeight": 0,
+        "hasActiveCampaign": false,
+        "id": "e6411f00a11e052bb2cb29f569a4e4a7",
+        "images": [],
+        "lastPriceChangeDate": "2025-07-24T06:46:17.920+00:00",
+        "lastStockChangeDate": "2025-07-24T06:46:17.920+00:00",
+        "lastUpdateDate": 1753339577920,
+        "listPrice": 5000,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 30909,
+        "platformListingId": "4a8b07365ff3f8856c3d456d72fb522b",
+        "productMainId": "3213",
+        "quantity": 1,
+        "salePrice": 5000,
+        "stockCode": "9999110120015",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "İphone 11 Get Deneme",
+        "vatRate": 10,
+        "version": 2,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 59424,
+                "attributeName": "[A-TDG]_Beden",
+                "attributeValue": "[A-TDG]_M",
+                "attributeValueId": 2175168
+            },
+            {
+                "attributeId": 59415,
+                "attributeName": "[A-TDG]_Renk",
+                "attributeValue": "Mavi"
+            },
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Mavi",
+                "attributeValueId": 2888
+            }
+        ],
+        "barcode": "asdasd2",
+        "batchRequestId": "b64738cd-f592-4b05-b50f-558d83293c06-1753285848",
+        "brand": "Dekorsende",
+        "brandId": 172711,
+        "categoryName": "[TDG] T-Shirt",
+        "createDateTime": 1753260648679,
+        "description": "<p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhuns</p>",
+        "dimensionalWeight": 1,
+        "hasActiveCampaign": false,
+        "id": "674694f1a361c62a7d40e7f40978ee44",
+        "images": [
+            {
+                "url": "https://cdn.eticex.com/integration/products/590yapay-3lu-acmis-gul-dali-kirmizi-68-cm-ff-429.jpg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-23T08:50:48.822+00:00",
+        "lastStockChangeDate": "2025-07-23T08:50:48.822+00:00",
+        "lastUpdateDate": 1753438639500,
+        "listPrice": 2200,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 106766,
+        "platformListingId": "cb12d4a876fbc3cdfae3c0015d495c40",
+        "productMainId": "611",
+        "quantity": 5,
+        "salePrice": 2200,
+        "stockCode": "asdasd2",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "asdasdasd",
+        "vatRate": 20,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Tespit Edilmeyen Renk/Beden Bilgisi",
+                "rejectReasonDetail": "Bir barkod, tek renk/beden bilgisine ait olmalıdır. Satış ve varyant bilgileri alanından ürün bilgilerini tek renk/bedene ait olacak şekilde ayrı giriş yapmanız ve her renk seçeneğine ayrı görsel eklemeniz gerekmektedir."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 59424,
+                "attributeName": "[A-TDG]_Beden",
+                "attributeValue": "[A-TDG]_S",
+                "attributeValueId": 2175143
+            },
+            {
+                "attributeId": 59415,
+                "attributeName": "[A-TDG]_Renk",
+                "attributeValue": "Mavi"
+            },
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Mavi",
+                "attributeValueId": 2888
+            }
+        ],
+        "barcode": "asdasd1",
+        "batchRequestId": "b64738cd-f592-4b05-b50f-558d83293c06-1753285848",
+        "brand": "Dekorsende",
+        "brandId": 172711,
+        "categoryName": "[TDG] T-Shirt",
+        "createDateTime": 1753260648580,
+        "description": "<p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhun</p><p>Test Ceyhuns</p>",
+        "dimensionalWeight": 1,
+        "hasActiveCampaign": false,
+        "id": "5ca8c80ae24570cd077dc02be5d71260",
+        "images": [
+            {
+                "url": "https://cdn.eticex.com/integration/products/590yapay-3lu-acmis-gul-dali-kirmizi-68-cm-ff-429.jpg"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-23T08:50:48.801+00:00",
+        "lastStockChangeDate": "2025-07-23T08:50:48.801+00:00",
+        "lastUpdateDate": 1753438639495,
+        "listPrice": 520,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 106766,
+        "platformListingId": "0e8dba47a48ce821c582c5b30b673efd",
+        "productMainId": "611",
+        "quantity": 2,
+        "salePrice": 520,
+        "stockCode": "asdasd1",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "asdasdasd",
+        "vatRate": 20,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Tespit Edilmeyen Renk/Beden Bilgisi",
+                "rejectReasonDetail": "Bir barkod, tek renk/beden bilgisine ait olmalıdır. Satış ve varyant bilgileri alanından ürün bilgilerini tek renk/bedene ait olacak şekilde ayrı giriş yapmanız ve her renk seçeneğine ayrı görsel eklemeniz gerekmektedir."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 7,
+                "attributeName": "Ekartman",
+                "attributeValue": "Tek Ebat",
+                "attributeValueId": 675128
+            },
+            {
+                "attributeId": 296,
+                "attributeName": "Cinsiyet",
+                "attributeValue": "Kadın",
+                "attributeValueId": 21494
+            },
+            {
+                "attributeId": 47,
+                "attributeName": "Renk",
+                "attributeValue": "Renkli",
+                "attributeValueId": 418
+            },
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Haki",
+                "attributeValueId": 2899
+            },
+            {
+                "attributeId": 294,
+                "attributeName": "Yaş Grubu",
+                "attributeValue": "Yetişkin",
+                "attributeValueId": 2879
+            }
+        ],
+        "barcode": "ayakkabi-tr-identity",
+        "batchRequestId": "607849f8-3593-44dd-942d-0d78e2c07aa8-1753557625",
+        "brand": "Sunlife",
+        "brandId": 20726,
+        "categoryName": "Abiye Ayakkabı",
+        "createDateTime": 1753219888744,
+        "description": "Abiye Ayakkabı Yeni Sezon Bayan",
+        "dimensionalWeight": 1,
+        "gender": "Kadın",
+        "hasActiveCampaign": false,
+        "id": "2a8ed774d1592ec596ddd8767b36cd13",
+        "images": [
+            {
+                "url": "https://img.kwcdn.com/product/fancy/6408e8b9-da86-4560-9aa8-b81e1ccddd6a.jpg?imageView2/2/w/800/q/70/format/webp"
+            },
+            {
+                "url": "https://img.kwcdn.com/product/fancy/abefece5-d27e-4ae3-b3d2-c72410221cfb.jpg?imageView2/2/w/800/q/70/format/webp"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-22T21:31:29.477+00:00",
+        "lastStockChangeDate": "2025-07-22T21:31:29.477+00:00",
+        "lastUpdateDate": 1753298629758,
+        "listPrice": 1111,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 431,
+        "platformListingId": "478207f0bf7565bf7c367bfc5ff84113",
+        "productMainId": "ayakkabi-tr-identitye",
+        "quantity": 11,
+        "salePrice": 1111,
+        "stockCode": "ayakkabi-tr-scode",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "Abiye Ayakkabı Yeni Sezon Bayan",
+        "vatRate": 1,
+        "version": 2,
+        "rejected": true,
+        "rejectReasonDetails": [
+            {
+                "rejectReason": "Görselde Tescilli Marka",
+                "rejectReasonDetail": "Görselde bulunan logo/amblem/tasarım/metin tescilli bir markaya aittir. Ürün bilgilerinin doğruluğunu kontrol ederek ürün görselinizi güncelleyiniz."
+            }
+        ],
+        "blacklisted": false,
+        "productUrl": null
+    },
+    {
+        "approved": false,
+        "archived": false,
+        "attributes": [
+            {
+                "attributeId": 293,
+                "attributeName": "Beden",
+                "attributeValue": "S-M",
+                "attributeValueId": 17790
+            },
+            {
+                "attributeId": 295,
+                "attributeName": "Web Color",
+                "attributeValue": "Kırmızı",
+                "attributeValueId": 2886
+            },
+            {
+                "attributeId": 47,
+                "attributeName": "Renk",
+                "attributeValue": "KIRMIZI"
+            },
+            {
+                "attributeId": 296,
+                "attributeName": "Cinsiyet",
+                "attributeValue": "Unisex",
+                "attributeValueId": 2875
+            }
+        ],
+        "barcode": "SHOPIFY-50191743353127",
+        "batchRequestId": "f21bdaff-5027-459d-abb3-97c72a8d52ae-1753050237",
+        "brand": "lunexa intimate",
+        "brandId": 317796,
+        "categoryName": "Fantezi Gecelik",
+        "createDateTime": 1753025037943,
+        "description": "<p>Kırmızı dantel korsesiyle bel hattını nazikçe saran bu set, altındaki fırfırlı etekle romantik ve etkileyici bir siluet yaratıyor. Vücuda oturan üst form, göğüs kısmındaki çiçek desenleriyle zarif bir dokunuş sunarken; ruffled etek tasarımı feminenliği özgürce vurguluyor. İddialı detaylarla şıklığı bir araya getiren bu set, kendine güvenen kadınların favorisi olmaya aday.</p>",
+        "dimensionalWeight": 2,
+        "gender": "Unisex",
+        "hasActiveCampaign": false,
+        "id": "197f35305ad18689b116ed3905a61c36",
+        "images": [
+            {
+                "url": "https://cdn.shopify.com/s/files/1/0937/9355/0631/files/WhatsAppImage2025-03-10at15.13.05_1.jpg?v=1750609938"
+            },
+            {
+                "url": "https://cdn.shopify.com/s/files/1/0937/9355/0631/files/WhatsAppImage2025-03-10at15.13.04_1.jpg?v=1750609938"
+            },
+            {
+                "url": "https://cdn.shopify.com/s/files/1/0937/9355/0631/files/WhatsAppImage2025-03-10at15.13.04.jpg?v=1750609938"
+            },
+            {
+                "url": "https://cdn.shopify.com/s/files/1/0937/9355/0631/files/WhatsAppImage2025-03-10at15.13.05.jpg?v=1750609941"
+            }
+        ],
+        "lastPriceChangeDate": "2025-07-20T15:23:58.819+00:00",
+        "lastStockChangeDate": "2025-07-20T15:23:58.819+00:00",
+        "lastUpdateDate": 1753025142996,
+        "listPrice": 549.99,
+        "locked": false,
+        "onSale": false,
+        "pimCategoryId": 14994,
+        "platformListingId": "ef1bb995339d258bdece622024b57152",
+        "productMainId": "SHOPIFY-9861123473703",
+        "quantity": 10,
+        "salePrice": 549.99,
+        "stockCode": "STOK-50191743353127",
+        "stockUnitType": "Adet",
+        "supplierId": 2738,
+        "title": "Aşk Hattı: Korse Detaylı Kırmızı Dantel Etekli Set",
+        "vatRate": 20,
+        "deliveryDuration": 1,
+        "version": 2,
+        "rejected": false,
+        "rejectReasonDetails": [],
+        "blacklisted": false,
+        "productUrl": null
+    }
+]

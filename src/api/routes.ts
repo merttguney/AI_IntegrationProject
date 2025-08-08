@@ -11,7 +11,7 @@ const trendyolApiService = new TrendyolApiService();
 const trendyolMapperService = new TrendyolProductMapperService();
 
 router.post(
-  "/process",
+  "/process", // // Process endpointi ne yapıyor 
   authenticate,
   async (req: Request, res: Response): Promise<void> => {
     const { data, operationType, queueName, websiteId } = req.body;
@@ -56,6 +56,8 @@ router.post(
 
     try {
       console.log("Fetching products from Trendyol...");
+
+      // trendyol mu local mi?? => queue'ya öncesinde gitmesi lazım mappingden. 
       
       // 1. Fetch products from Trendyol (mock data)
       const trendyolProducts = await trendyolApiService.getProducts();
@@ -63,9 +65,11 @@ router.post(
 
       // 2. Map Trendyol products to internal format
       const mappingResult = await trendyolMapperService.mapBatch(
+        // Await ile beklememesi lazım paralelde işlesin. promise ile gitsin. Queue'ya da aynı şekilde publish edilsin.
         trendyolProducts, 
         websiteId
       );
+
 
       if (!mappingResult.success) {
         res.status(400).json({ 
